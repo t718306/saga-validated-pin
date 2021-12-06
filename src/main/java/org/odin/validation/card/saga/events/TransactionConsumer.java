@@ -21,6 +21,7 @@ public class TransactionConsumer {
     @Incoming("process-transaction-in")
     public void process(Transaction transaction) throws InterruptedException {
         producer.InProcessing(transaction);
+        
         producer.Processed(transaction);
     }
 }
