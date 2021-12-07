@@ -33,6 +33,3 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: |
-            ${{ secrets.REPO_NAME }}:${{ env.IMAGE_TAG }}
-            ${{ secrets.REPO_NAME }}:latest
