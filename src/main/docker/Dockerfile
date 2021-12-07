@@ -3,11 +3,11 @@
 #
 # Before building the container image run:
 #
-# ./mvnw package
+ ./mvnw package
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.jvm -t quarkus/odin-validation-card-jvm .
+ docker build -f src/main/docker/Dockerfile.jvm -t quarkus/odin-validation-card-jvm .
 #
 # Then run the container using:
 #
