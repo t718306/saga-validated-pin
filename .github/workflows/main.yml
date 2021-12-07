@@ -28,6 +28,5 @@ jobs:
           ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
           IMAGE_TAG: 1.0
         run: |
-          ./mvnw package
-          docker build -f src/main/docker/Dockerfile.jvm -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG  .
+          docker build -f src/main/docker/Dockerfile.native -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
