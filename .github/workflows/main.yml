@@ -22,10 +22,12 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
 
-
       - name: Build, Tag, and Push the Image to Amazon ECR
         id: build-image
         uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
