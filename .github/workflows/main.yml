@@ -6,7 +6,16 @@ jobs:
   build-and-push:
     name: Build and Push to ECR
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+
+      - name: Generate build ID
+        id: prep
+        run: |
+            branch=${GITHUB_REF##*/}
+            sha=${GITHUB_SHA::8}
+            ts=$(date +%s)
+            echo "::set-output name=BUILD_ID::${branch}-${sha}-${ts}" 
+      
       - name: Checkout
         uses: actions/checkout@v2
 
@@ -34,7 +43,7 @@ jobs:
         env:
           ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
           ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
-          IMAGE_TAG: ${{ steps.build-image.outputs.image }} 
+          IMAGE_TAG: ${{ steps.build-image.outputs.image }}
         run: |
           docker build -f src/main/docker/Dockerfile.native -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
