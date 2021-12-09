@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: saga-validated-pin
+  labels:
+    app: saga-validated-pin
+spec:
+  selector:
+    matchLabels:
+      octopusexport: OctopusExport
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: saga-validated-pin
+        octopusexport: OctopusExport
+    spec:
+      containers:
+        - name: demo-odin
+          image: 589696708747.dkr.ecr.sa-east-1.amazonaws.com/demo-odin
