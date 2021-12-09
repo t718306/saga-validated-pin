@@ -19,4 +19,4 @@ spec:
     spec:
       containers:
         - name: demo-odin
-          image: 589696708747.dkr.ecr.sa-east-1.amazonaws.com/demo-odin
+          image: 589696708747.dkr.ecr.sa-east-1.amazonaws.com/demo-odin:main-69fdfa03-1639081681
