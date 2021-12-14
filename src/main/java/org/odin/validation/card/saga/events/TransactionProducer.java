@@ -32,6 +32,7 @@ public class TransactionProducer {
     public void Processed(Transaction transaction) throws InterruptedException {
 
         Thread.sleep(200);
+        
 
         Payload payload = JSONB.fromJson(transaction.getPayload(), Payload.class);
 
