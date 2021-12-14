@@ -1,5 +1,12 @@
 package org.odin.validation.card.saga.model;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class Card {
     public String idCard;
     public double balance;
@@ -32,5 +39,3 @@ public class Card {
         }
     }
 }
-
-

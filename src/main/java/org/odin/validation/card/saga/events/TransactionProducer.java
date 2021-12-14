@@ -23,7 +23,7 @@ public class TransactionProducer {
 
     public void InProcessing(Transaction transaction) throws InterruptedException {
 
-        transaction.sagaStatus = "STARTED";
+        transaction.stepStatus = "STARTED";
         transaction.currentStep = "VALIDATION_PIN";
         logger.info("Antes de enviar para o Confirmation");
         emitter.send(transaction);
@@ -37,10 +37,10 @@ public class TransactionProducer {
         //Card card = JSONB.fromJson(transaction.getPayload(), Card.class);
 
         if(transaction.payload.ValidatePin(String.valueOf(transaction.payload.pin)) == false) {
-            transaction.sagaStatus = "ABORTED";
+            transaction.stepStatus = "ABORTED";
         }
         else {
-            transaction.sagaStatus = "SUCCEEDED";
+            transaction.stepStatus = "SUCCEEDED";
         }
 
         transaction.currentStep = "VALIDATION_PIN";
