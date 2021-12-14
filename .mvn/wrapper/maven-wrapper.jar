@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.min.css?v=1.2.25" />
+	<link rel="shortcut icon" type="image/ico" href="/static/icons/cisco.ico" />
+	
+	
+
+	
+	<title>Site Blocked</title>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="logo-area">
+			
+			<img id="logo" class="logo" src="https://d3aswa4nvo33j8.cloudfront.net/a/f/af0b52a3b4e58469c184002c803253a9d208be2349a525e91c91c21525e83988f2092d66afb6c7b3a773893a240394f9b583f85dd341a3e2f7fa31408e4430a5.png"></img>
+			
+		</div>
+		<div class="content-area">
+
+			<div class="blocked-page">
+				<h3>
+					<i class="fa fa-exclamation-triangle alert-icon"></i>					
+					This file is blocked due to File Type policy.
+				</h3>
+				<div class="url-area">
+					
+					<input readonly class="url" id="inputUrl" type="text" value="JAR File" />
+					
+				</div>
+
+				
+			</div>
+			<div class="explanation-area">
+				
+
+				
+				<p class="custom-message" id="customMessage">
+					<p style="text-align:center;"><strong>O acesso a este tipo de arquivo não é permitido</strong></p>
+<p style="text-align:start;">A extensão JAR que você está tentando acessar não é permitida, pois seu conteúdo pode apresentar algum risco de segurança para o Banco. Para maiores informações, consulte a política de Segurança da Informação, ID 158865.</p>
+<p></p>
+<p style="text-align:start;">Havendo a necessidade de acesso a solicitação pode ser realizada através do <a href="https://santander.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=a1ea2aa51b0db7c020044002cd4bcb07&amp;sysparm_processing_hint=setfield:request.parent%3d&amp;sysparm_link_parent=3777a2651bc9b7c020044002cd4bcbd6&amp;sysparm_catalog=719aafd0db031f448c6c7cde3b9619f8&amp;sysparm_catalog_view=catalog_Technical_Catalog&amp;sysparm_view=catalog_Technical_Catalog" target="_blank">Service Now</a> inserindo a URL que necessita o acesso e selecionando a tecnologia Proxy. </p>
+
+				</p>
+
+				
+
+				
+
+				
+					
+					<div class="categorized">
+						<p>
+							This file was categorized as:
+							<strong>
+								JAR
+							</strong>
+						</p>
+					</div>
+					
+				
+
+				
+				
+				<div class="proxy-area">
+					
+						
+					
+
+					
+					
+						<div class="diagnostic-info-area" id="diagnosticInfoArea">
+							<i class="fa fa-angle-right" id="diagnosticToggleCaret"></i>
+							<a href="#" id="diagnosticToggle">Diagnostic Info</a>
+							<div class="diagnostic-info">
+								<dl>
+								
+									<dt>ACType</dt>
+									<dd>-</dd>
+								
+									<dt>Block Type</dt>
+									<dd>ftc</dd>
+								
+									<dt>Bundle ID</dt>
+									<dd>7477594</dd>
+								
+									<dt>Domain Tagging</dt>
+									<dd>1800000000000000500021F0000000000000000</dd>
+								
+									<dt>Host</dt>
+									<dd>block.opendns.com</dd>
+								
+									<dt>IP Address</dt>
+									<dd>146.112.33.150</dd>
+								
+									<dt>Org ID</dt>
+									<dd>2658634</dd>
+								
+									<dt>Origin ID</dt>
+									<dd>1094545507</dd>
+								
+									<dt>Prefs</dt>
+									<dd>1597504</dd>
+								
+									<dt>Query</dt>
+									<dd>server=mps-478592be1245.sigenv1.rio1&amp;v=eyJhbGciOiAiSFM1MTIiLCAia2lkIjogIjE1NjM1NTk3OTYifQ.eyJidHlwZSI6ICIiLCAib3JnIjogMjY1ODYzNCwgIm9pZCI6IDEwOTQ1NDU1MDcsICJiaWQiOiA3NDc3NTk0LCAicHJmIjogMTU5NzUwNCwgInQiOiAiMTgwMDAwMDAwMDAwMDAwMDUwMDAyMUYwMDAwMDAwMDAwMDAwMDAwIiwgImJjIjogIiIsICJ1cmwiOiAiaHR0cHM6Ly9yZXBvLm1hdmVuLmFwYWNoZS5vcmcvbWF2ZW4yL2lvL3Rha2FyaS9tYXZlbi13cmFwcGVyLzAuNS42L21hdmVuLXdyYXBwZXItMC41LjYuamFyIiwgImZ0YyI6ICJqYXIiLCAiZm5hbWVzIjogIiIsICJicGlkIjogMH0.dsKKr_itXxBIyEmzqZ2bTAVA1o0EaKFswUb8yMrf31sIWaJ6s6HpI4LcCELhA-0kKCwZfD7pUfxEM4kutjFEEA</dd>
+								
+									<dt>Server</dt>
+									<dd>mps-478592be1245.sigenv1.rio1</dd>
+								
+									<dt>Time</dt>
+									<dd>2021-12-07 14:27:39.497864511 &#43;0000 UTC m=&#43;7150349.900802285</dd>
+								
+								</dl>
+							</div>
+						</div>
+					
+					
+
+				</div>
+				
+				
+			</div>
+
+			<script type="text/javascript">
+				var cfOptions = {
+					baseUrl: "https://tools.opendns.com/contact-netadmin/",
+					enabled:  false ,
+					domain: "repo.maven.apache.org",
+					blockType: "ftc",
+					oid:  0 ,
+					oidhash: "41032e4357d52685ef813d7d7b81e23bed221d299d86ac0476033e06698bb90c",
+					bundleid:  7477594 ,
+					bundleidhash: "9733a1b6998d77c679f3b049dac5f812faa7c4b58c7e0e250b6d82623425fbe4",
+					preview:  false ,
+					requestId: "c6nmumtocijltgc47n60"
+				}
+			</script>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/js/scripts.min.js?v=1.2.25"></script>
+</body>
+</html>
+
