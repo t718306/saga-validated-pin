@@ -19,8 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
-      - name: Instalação Gouge
-        uses: getgouge/setup-gauge@master
+      - name: Instalação Gauge
+        uses: getgauge/setup-gauge@master
         with:
             gauge-version: master
             gauge-plugins: java, html-report
